@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --color-app-gradient: #008cd1;
+  --color-seaweed: #007C89;
+  --color-sky: #238DC1;
+  --color-ocean: #005963;
+  --font-sans: "IBM Plex Sans", Arial, sans-serif;
+}
