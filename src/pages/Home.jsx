@@ -61,6 +61,7 @@ const Home = () => {
               alt="Picture of a plant-based meat dish"
               className="block border w-110 max-w-none ml-10"
             />
+
             {/* short intro paragraph to plant based meat + heading*/}
             <div className="flex-1 px-10 flex flex-col justify-center">
               <h3 className="font-bold text-3xl pb-4">🌱 Plant-based</h3>
@@ -73,6 +74,7 @@ const Home = () => {
               </ul>
             </div>
           </div>
+
           {/* fermented meat side */}
           <div className="py-10 flex items-stretch gap-6">
             {/* paragraph + hedaer on fermented meat */}
@@ -85,6 +87,7 @@ const Home = () => {
                 </li>
               </ul>
             </div>
+
             {/* image of fermented meat dish */}
             <img
               src={FermentationPic}
@@ -101,6 +104,7 @@ const Home = () => {
               alt="Picture of a cultivated meat dish"
               className="block border w-110 max-w-none ml-10"
             />
+
             {/* short intro paragraph on cultivated meat + heading*/}
             <div className="flex-1 px-10 flex flex-col justify-center">
               <h3 className="font-bold text-3xl pb-4">🔬 Cultivated</h3>
@@ -112,12 +116,123 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <NavLink
-            to={'/WhoAreWe'}
-            className="text-2xl font-bold py-10 flex justify-center"
-          >
-            [Learn More →]
-          </NavLink>
+
+          {/* 
+              the following div is for the "learn more" part and to redirect the user
+              to the WhoAreWe page to learn more about alt proteins
+          */}
+          <div className="flex justify-center py-10">
+            <NavLink to={'/WhoAreWe'} className="text-2xl font-bold ">
+              [Learn More →]
+            </NavLink>
+          </div>
+
+          {/* Events sections */}
+          <div className="py-7">
+            <h3 className="font-bold pl-3 text-4xl pb-5">Upcoming Events</h3>
+            <ul className="list-[square] mx-30">
+              {/* Lecture Secires */}
+              <li className="text-2xl">
+                🔬 <span className="font-bold text-sky">Lecture Series:</span>{' '}
+                The Science of Cultivated Meat
+                <ul className="list-[circle] mx-20 my-3">
+                  <li>
+                    <span className="font-bold">Things Planned:</span>{' '}
+                    <ul className="ml-15 list-disc">
+                      <li>
+                        🎤 Expert talk: Danielle Serra, PhD Candidate in
+                        Biomedical Engineering at the University of Toronto, on
+                        how synthetic biology and stem cell engineering can make
+                        cultivated meat more efficient and affordable
+                      </li>
+                      <li>
+                        💬 Open Q&A: ask your questions directly and learn how
+                        to get involved in alt protein research
+                      </li>
+                      <li>
+                        🤝 Networking: meet students interested in food, health,
+                        and sustainability
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span className="font-bold">Location:</span> University of
+                    Toronto (St. George campus) Room (TBD)
+                  </li>
+                  <li>
+                    <span className="font-bold">Date:</span> Friday, November
+                    27, 2026
+                  </li>
+                  <li>
+                    <span className="font-bold">Time:</span> 5:30 PM - 7:30 PM
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div className="flex justify-center pb-6">
+              <button className="bg-ocean cursor-pointer px-17 py-3 border border-night rounded-4xl font-extrabold text-white" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdPqMb2Um8Mr2qnNvPODyqnKJH6kD90T0_T0PN0Yl3vCRB8bw/viewform', '_blank', 'noopener,noreferrer')}>
+                Sign Up Now!
+              </button>
+            </div>
+
+            <ul>
+              {/* Alt Pro Eats */}
+              <li className="text-2xl">
+                {' '}
+                🍽️<span className="font-bold text-sky"> Alt-Pro Eats:</span> The
+                Nutritional Benefits of Alternative Proteins
+                <ul className="list-[circle] mx-20 my-3">
+                  <li>
+                    <span className="font-bold">Things Planned:</span>{' '}
+                    <ul className="ml-15 list-disc">
+                      <li>
+                        🍽️ Tasting: sample a variety of plant-based meat and
+                        dairy alternatives
+                      </li>
+                      <li>
+                        🎤 Expert talk: Dr. Laura Chiavaroli, Assistant
+                        Professor of Nutritional Sciences at the University of
+                        Toronto, on how these products compare nutritionally to
+                        the originals
+                      </li>
+                      <li>
+                        💬 Q&A: ask your questions directly to the speaker!
+                      </li>
+                      <li>
+                        🤝 Networking: meet students interested in food, health,
+                        and sustainability
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span className="font-bold">Location:</span> TBD
+                  </li>
+                  <li>
+                    <span className="font-bold">Date:</span> TBD
+                  </li>
+                  <li>
+                    <span className="font-bold">Time:</span> TBD
+                  </li>
+                </ul>
+              </li>
+
+              {/* CAPS */}
+              <li className="text-2xl">
+                🍽️
+                <span className="font-bold text-sky">
+                  {' '}
+                  Canadian Alternative Protein Symposium (CAPS):
+                </span>{' '}
+                Coming soon!
+              </li>
+            </ul>
+            <a className="flex justify-center text-2xl font-bold py-5">
+              [Join our newsletter to get updates every month →]
+            </a>
+          </div>
+
+          <div>{/* Section about UofT */}</div>
         </div>
       </div>
     </div>
