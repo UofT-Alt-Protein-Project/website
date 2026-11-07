@@ -25,7 +25,7 @@ const Navbar = () => {
           <li key={pages.path}>
             <NavLink
               to={pages.path}
-              className={({ isActive }) => `px-3 py-1 rounded transition ${isActive ? 'bg-white/15 text-ocean' : 'hover:bg-white/10'}`}
+              className={({ isActive }) => `px-5 py-3 rounded transition ${isActive ? 'bg-white/15' : 'hover:bg-white/10'}`}
             >
               {pages.name}
             </NavLink>

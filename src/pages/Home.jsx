@@ -75,7 +75,7 @@ const Home = () => {
       </div>
       {/* this following part is about the small intro to alt proteins + pictures */}
       <div className="py-7">
-        <h3 className="font-bold pl-3 text-2xl pb-3">
+        <h3 className="font-bold pl-3 text-3xl pb-3">
           What Are Alternative Proteins?
         </h3>
 
@@ -148,18 +148,18 @@ const Home = () => {
               the following div is for the "learn more" part and to redirect the user
               to the WhoAreWe page to learn more about alt proteins
           */}
-      <div className="flex justify-center py-10">
+      <div className="flex justify-center py-4">
         <NavLink to={'/WhoAreWe'} className="text-2xl font-bold ">
           [Learn More →]
         </NavLink>
       </div>
 
       {/* Events sections */}
-      <div className="py-7">
-        <h3 className="font-bold pl-3 text-4xl pb-5">Upcoming Events</h3>
+      <div>
+        <h3 className="font-bold pl-3 text-3xl pb-5">Upcoming Events</h3>
         <ul className="list-[square] mx-30">
           {/* Lecture Secires */}
-          <li className="text-2xl">
+          <li className="text-xl">
             🔬 <span className="font-bold text-sky">Lecture Series:</span> The
             Science of Cultivated Meat
             <ul className="list-[circle] mx-20 my-3">
@@ -214,7 +214,7 @@ const Home = () => {
 
         <ul className="list-[square] mx-30">
           {/* Alt Pro Eats */}
-          <li className="text-2xl">
+          <li className="text-xl">
             {' '}
             🍽️<span className="font-bold text-sky"> Alt-Pro Eats:</span> The
             Nutritional Benefits of Alternative Proteins
@@ -251,7 +251,7 @@ const Home = () => {
           </li>
 
           {/* CAPS */}
-          <li className="text-2xl">
+          <li className="text-xl">
             🍽️
             <span className="font-bold text-sky">
               {' '}
@@ -264,7 +264,7 @@ const Home = () => {
           href="https://docs.google.com/forms/d/e/1FAIpQLSd7U415Zw5wR16CSaBR_Rx8ZWw4UW2319GGrbU2JiRoIO1IxA/viewform"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex justify-center text-2xl font-bold pt-5"
+          className="flex justify-center text-xl font-bold pt-5"
         >
           [Join our newsletter to get updates every month →]
         </a>
@@ -272,7 +272,7 @@ const Home = () => {
 
       {/* Section about UofT */}
       <div>
-        <h3 className="font-bold pl-3 text-4xl pb-5">
+        <h3 className="font-bold pl-3 text-3xl py-5">
           What makes the University of Toronto a hub?
         </h3>
         <div className='flex flex-row justify-evenly gap-10 px-10 py-10'>
