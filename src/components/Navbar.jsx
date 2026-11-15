@@ -16,7 +16,7 @@ const Navbar = () => {
         <img
           src={Badge}
           alt="UofT Alt Protein Project Badge"
-          className="h-20 flex flex-row shrink-0 pl-5"
+          className="h-25 flex flex-row shrink-0 pl-5"
         />
       </NavLink>
 
