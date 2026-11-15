@@ -21,7 +21,7 @@ const JoinUs = () => {
             'noopener,noreferrer',
           )
         }
-        className="block mx-auto bg-ocean rounded-full my-10 py-5 px-100 text-white font-bold text-2xl"
+        className="cursor-pointer block mx-auto bg-ocean rounded-full my-10 py-5 px-100 text-white font-bold text-2xl"
       >
         Join Us Now!
       </button>
