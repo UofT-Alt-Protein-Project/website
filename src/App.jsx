@@ -7,6 +7,7 @@ import CAPS from './pages/CAPS'
 import JoinUs from './pages/JoinUs'
 import TheTeam from './pages/TheTeam'
 import WhoAreWe from './pages/WhoAreWe'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App(){
   return (
@@ -23,6 +24,7 @@ export default function App(){
         </Routes>
       </main>
       <Footer />
+      <Analytics />
     </div>
   )
 }
