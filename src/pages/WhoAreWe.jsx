@@ -3,6 +3,9 @@ import map from '../assets/map.png'
 import PlantBasedPic from '../assets/APP_PlantBased_Picture.jpg'
 import FermentationPic from '../assets/APP_Fermentation_Picture.jpg'
 import CultivatedPic from '../assets/APP_Cultivated_Picture.png'
+import policy_icon from '../assets/policy_icon.png'
+import shaking_icon from '../assets/shaking_icon.png'
+import thinking_icon from '../assets/thinking_icon.png'
 
 const altProteins = [
   {
@@ -33,6 +36,21 @@ const altProteins = [
   },
 ]
 
+const objectives = [
+  {
+    title: 'Science and Technology',
+    Icon: thinking_icon,
+  },
+  {
+    title: 'Corporate Engagement',
+    Icon: shaking_icon,
+  },
+  {
+    title: 'Policy',
+    Icon: policy_icon,
+  },
+]
+
 const WhoAreWe = () => {
   return (
     <div>
@@ -47,10 +65,9 @@ const WhoAreWe = () => {
               sustainable, secure, and just protein supply. Current meat, egg,
               and dairy production is unsustainable and inefficient. It is a key
               driver of climate change, environmental degradation, and
-              antibiotic resistance. We aimed to create meat, eggs, and dairy
-              more sustainably and efficiently by making them from plants,
-              producing them by fermentation, or cultivating them directly from
-              cells.
+              antibiotic resistance. We aim to create meat, eggs, and dairy more
+              sustainably and efficiently by making them from plants, producing
+              them by fermentation, or cultivating them directly from cells.
             </p>
             <p>
               The Alt Protein Project finds, trains, and empowers student
@@ -75,10 +92,13 @@ const WhoAreWe = () => {
           <h3 className="font-bold pl-3 text-3xl mb-8">
             What is Alternative Protein
           </h3>
-          <div className="grid gap-12 md:grid-cols-[minmax(0,28rem)_1fr]">
-            <div className="space-y-10">
-              {altProteins.map((item) => (
-                <figure key={item.title}>
+          <div className="space-y-14">
+            {altProteins.map((item) => (
+              <div
+                key={item.title}
+                className="grid gap-8 md:grid-cols-[18rem_1fr] items-start"
+              >
+                <figure>
                   <img
                     src={item.image}
                     alt={item.alt}
@@ -88,20 +108,36 @@ const WhoAreWe = () => {
                     {item.title}
                   </figcaption>
                 </figure>
-              ))}
-            </div>
 
-            <ul className="list-disc pl-5 space-y-12 text-lg">
-              {altProteins.map((item) => (
-                <li key={item.title} className="font-bold">
-                  {item.title}
-                  <ul className="list-[circle] pl-8 mt-3 space-y-2 leading-loose">
-                    <li>{item.summary}</li>
-                    <li className="font-normal">{item.detail}</li>
-                  </ul>
-                </li>
-              ))}
-            </ul>
+                <ul className="list-disc pl-5">
+                  <li className="font-bold">
+                    {item.title}
+                    <ul className="list-[circle] pl-8 mt-3 space-y-2 leading-loose">
+                      <li>{item.summary}</li>
+                      <li className="font-normal">{item.detail}</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* 3 key objectives for the year */}
+        <section className="px-6 pt-12 pb-16 md:px-36 md:pt-20">
+          <h3 className="font-bold pl-3 text-3xl mb-8">
+            3 Key Objectives for the Year
+          </h3>
+          <div className="grid gap-12 sm:grid-cols-3">
+            {objectives.map(({ title, Icon }) => (
+              <div
+                key={title}
+                className="flex flex-col items-center text-center"
+              >
+                <img src={Icon} alt="" className="w-24 h-24 object-contain" />
+                <p className="mt-6 text-lg font-bold">{title}</p>
+              </div>
+            ))}
           </div>
         </section>
       </div>
