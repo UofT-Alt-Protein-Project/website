@@ -7,10 +7,12 @@ const leftMenu = [
     name: 'Who Are We?',
     path: '/WhoAreWe',
     children: [
-      { name: 'About Us', path: '/WhoAreWe/AboutUs' },
-      { name: 'What is Alternative Protein', path: '/WhoAreWe/WhatIsAltProtein' },
-      { name: 'Why Alternative Protein', path: '/WhoAreWe/WhyAltProtein' },
-      { name: '3 Key Objectives for the Year', path: '/WhoAreWe/Objectives' },
+      { name: 'About Us', path: '/WhoAreWe#AboutUs' },
+      {
+        name: 'What is Alternative Protein',
+        path: '/WhoAreWe#WhatIsAltProtein',
+      },
+      { name: '3 Key Objectives for the Year', path: '/WhoAreWe#Objectives' },
     ],
   },
 ]
@@ -21,8 +23,8 @@ const middleMenu = [
     name: 'Events',
     path: '/Events',
     children: [
-      { name: '2026-2027 Event', path: '/Events/2026-2027'},
-      { name: 'Past events (2024-2025, 2025-2026)', path: '/Events/Past'},
+      { name: '2026-2027 Event', path: '/Events/2026-2027' },
+      { name: 'Past events (2024-2025, 2025-2026)', path: '/Events/Past' },
     ],
   },
   { name: 'The Team', path: '/TheTeam' },

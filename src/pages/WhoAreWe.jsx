@@ -1,4 +1,5 @@
-import React from 'react'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import map from '../assets/map.png'
 import PlantBasedPic from '../assets/APP_PlantBased_Picture.jpg'
 import FermentationPic from '../assets/APP_Fermentation_Picture.jpg'
@@ -52,11 +53,22 @@ const objectives = [
 ]
 
 const WhoAreWe = () => {
+  const location = useLocation()
+
+  useEffect(() => {
+    if (!location.hash) return
+    const el = document.getElementById(location.hash.slice(1))
+    el?.scrollIntoView({ behavior: 'smooth' })
+  }, [location.hash, location.key])
+
   return (
     <div>
       {/* About Us */}
       <div>
-        <section className="px-6 pt-12 pb-16 md:px-36 md:pt-20">
+        <section
+          id="AboutUs"
+          className="scroll-mt-24 px-6 pt-12 pb-16 md:px-36 md:pt-20"
+        >
           <h3 className="font-bold pl-3 text-3xl mb-8">About Us </h3>
           <div className="space-y-6 text-lg leading-relaxed max-w-6xl md:pl-12">
             <p>
@@ -88,7 +100,10 @@ const WhoAreWe = () => {
         </div>
 
         {/* What is Alternative Protein */}
-        <section className="px-6 pt-12 pb-16 md:px-36 md:pt-20">
+        <section
+          id="WhatIsAltProtein"
+          className="scroll-mt-24 px-6 pt-12 pb-16 md:px-36 md:pt-20"
+        >
           <h3 className="font-bold pl-3 text-3xl mb-8">
             What is Alternative Protein
           </h3>
@@ -124,7 +139,10 @@ const WhoAreWe = () => {
         </section>
 
         {/* 3 key objectives for the year */}
-        <section className="px-6 pt-12 pb-16 md:px-36 md:pt-20">
+        <section
+          id="Objectives"
+          className="scroll-mt-24 px-6 pt-12 pb-16 md:px-36 md:pt-20"
+        >
           <h3 className="font-bold pl-3 text-3xl mb-8">
             3 Key Objectives for the Year
           </h3>
