@@ -36,25 +36,25 @@ const Home = () => {
       {/* this is setting the background gradient + logo + text + buttons */}
       <div
         style={{ backgroundImage: `url("${heroGradient}")` }}
-        className="w-full h-130 bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center pt-15"
+        className="w-full min-h-100 md:h-130 bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center px-4 py-12 md:py-0 md:pt-15"
       >
         {/* this works on the logo, white bolded text*/}
         <div>
           <img
             src={Badge}
             alt="UofT Alt Protein Badge"
-            className="h-50 mx-auto -translate-y-20"
+            className="h-32 md:h-50 mx-auto mb-4 md:mb-0 md:-translate-y-20"
           />
-          <h1 className="-translate-y-10 text-white font-extrabold text-3xl">
+          <h1 className="mb-8 md:mb-0 md:-translate-y-10 text-white font-extrabold text-2xl md:text-3xl">
             Researching the future of alternative proteins at UofT
           </h1>
         </div>
         {/* this is for the buttons */}
-        <div className="flex flex-row gap-65 ">
-          <button className="bg-ocean cursor-pointer px-17 py-3 border border-night rounded-4xl font-extrabold text-white">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-20 md:gap-65">
+          <button className="bg-ocean cursor-pointer px-12 md:px-17 py-3 border border-night rounded-4xl font-extrabold text-white">
             Join Us
           </button>
-          <button className="bg-ocean cursor-pointer px-17 py-3 border border-night rounded-4xl font-extrabold text-white">
+          <button className="bg-ocean cursor-pointer px-12 md:px-17 py-3 border border-night rounded-4xl font-extrabold text-white">
             Events
           </button>
         </div>
@@ -63,7 +63,7 @@ const Home = () => {
       <div>
         {/* this div is about the blurb at the beginning */}
         <div className="pb-2">
-          <h4 className="italic mx-15 text-center pt-7 text-[20px]">
+          <h4 className="italic mx-4 sm:mx-8 md:mx-15 text-center pt-7 text-lg md:text-[20px]">
             <span className="font-bold ">
               The Alt Protein Project finds, trains, and empowers student
               leaders at key research universities like the University of
@@ -75,24 +75,24 @@ const Home = () => {
       </div>
       {/* this following part is about the small intro to alt proteins + pictures */}
       <div className="py-7">
-        <h3 className="font-bold pl-3 text-3xl pb-3">
+        <h3 className="font-bold px-3 text-2xl md:text-3xl pb-3">
           What Are Alternative Proteins?
         </h3>
 
         {/* plant based meat side */}
-        <div className="flex items-stretch gap-6">
+        <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-6 px-4 lg:px-0">
           {/* image of plant based meat dish */}
           <img
             src={PlantBasedPic}
             alt="Picture of a plant-based meat dish"
-            className="block border w-110 max-w-none ml-10"
+            className="block border w-full max-w-xl lg:w-110 lg:max-w-none lg:ml-10"
           />
 
           {/* short intro paragraph to plant based meat + heading*/}
-          <div className="flex-1 px-10 flex flex-col justify-center">
-            <h3 className="font-bold text-3xl pb-4">🌱 Plant-based</h3>
+          <div className="flex-1 w-full px-2 sm:px-6 lg:px-10 flex flex-col justify-center">
+            <h3 className="font-bold text-2xl md:text-3xl pb-4">🌱 Plant-based</h3>
             <ul className="list-disc">
-              <li className="pl-2 ml-11 text-[26px] leading-relaxed mx-16">
+              <li className="pl-2 ml-6 lg:ml-11 text-lg md:text-xl lg:text-[26px] leading-relaxed lg:mr-16">
                 Proteins from peas, soy, wheat, and more, transformed into
                 burgers, nuggets, and milks that look, cook, and that are meant
                 to taste like the real thing.
@@ -102,12 +102,12 @@ const Home = () => {
         </div>
 
         {/* fermented meat side */}
-        <div className="py-10 flex items-stretch gap-6">
+        <div className="py-10 flex flex-col-reverse lg:flex-row items-center lg:items-stretch gap-6 px-4 lg:px-0">
           {/* paragraph + hedaer on fermented meat */}
-          <div className="flex-1 px-45 flex flex-col justify-center">
-            <h3 className="font-bold text-3xl pb-4">🧫 Fermentation</h3>
+          <div className="flex-1 w-full px-2 sm:px-6 lg:px-10 xl:px-45 flex flex-col justify-center">
+            <h3 className="font-bold text-2xl md:text-3xl pb-4">🧫 Fermentation</h3>
             <ul className="list-disc">
-              <li className="pl-2 ml-11 text-[26px] leading-relaxed">
+              <li className="pl-2 ml-6 lg:ml-11 text-lg md:text-xl lg:text-[26px] leading-relaxed">
                 Microbes like yeast and fungi turned into tiny food factories,
                 producing real dairy proteins, fats, and more.
               </li>
@@ -118,24 +118,24 @@ const Home = () => {
           <img
             src={FermentationPic}
             alt="Picture of a fermented meat dish"
-            className="block border w-130 max-w-none mr-10"
+            className="block border w-full max-w-xl lg:w-130 lg:max-w-none lg:mr-10"
           />
         </div>
 
         {/* cultivated based meat side */}
-        <div className="flex items-stretch gap-6">
+        <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-6 px-4 lg:px-0">
           {/* image of cultivated meat dish */}
           <img
             src={CultivatedPic}
             alt="Picture of a cultivated meat dish"
-            className="block border w-110 max-w-none ml-10"
+            className="block border w-full max-w-xl lg:w-110 lg:max-w-none lg:ml-10"
           />
 
           {/* short intro paragraph on cultivated meat + heading*/}
-          <div className="flex-1 px-10 flex flex-col justify-center">
-            <h3 className="font-bold text-3xl pb-4">🔬 Cultivated</h3>
+          <div className="flex-1 w-full px-2 sm:px-6 lg:px-10 flex flex-col justify-center">
+            <h3 className="font-bold text-2xl md:text-3xl pb-4">🔬 Cultivated</h3>
             <ul className="list-disc">
-              <li className="pl-2 ml-11 text-[26px] leading-relaxed mr-75">
+              <li className="pl-2 ml-6 lg:ml-11 text-lg md:text-xl lg:text-[26px] leading-relaxed xl:mr-75">
                 Real meat grown from a small sample of animal cells, from cell
                 to steak .
               </li>
@@ -144,28 +144,28 @@ const Home = () => {
         </div>
       </div>
 
-      {/* 
+      {/*
               the following div is for the "learn more" part and to redirect the user
               to the WhoAreWe page to learn more about alt proteins
           */}
       <div className="flex justify-center py-4">
-        <NavLink to={'/WhoAreWe'} className="text-2xl font-bold ">
+        <NavLink to={'/WhoAreWe'} className="text-xl md:text-2xl font-bold ">
           [Learn More →]
         </NavLink>
       </div>
 
       {/* Events sections */}
       <div>
-        <h3 className="font-bold pl-3 text-3xl pb-5">Upcoming Events</h3>
-        <ul className="list-[square] mx-30">
+        <h3 className="font-bold px-3 text-2xl md:text-3xl pb-5">Upcoming Events</h3>
+        <ul className="list-[square] mx-6 sm:mx-12 md:mx-30">
           {/* Lecture Secires */}
-          <li className="text-xl">
+          <li className="text-base sm:text-lg md:text-xl">
             🔬 <span className="font-bold text-sky">Lecture Series:</span> The
             Science of Cultivated Meat
-            <ul className="list-[circle] mx-20 my-3">
+            <ul className="list-[circle] ml-5 mr-2 md:mx-20 my-3">
               <li>
                 <span className="font-bold">Things Planned:</span>{' '}
-                <ul className="ml-15 list-disc">
+                <ul className="ml-5 md:ml-15 list-disc">
                   <li>
                     🎤 Expert talk: Danielle Serra, PhD Candidate in Biomedical
                     Engineering at the University of Toronto, on how synthetic
@@ -199,7 +199,7 @@ const Home = () => {
 
         <div className="flex justify-center pb-6">
           <button
-            className="bg-ocean cursor-pointer px-17 py-3 border border-night rounded-4xl font-extrabold text-white"
+            className="bg-ocean cursor-pointer px-12 md:px-17 py-3 border border-night rounded-4xl font-extrabold text-white"
             onClick={() =>
               window.open(
                 'https://docs.google.com/forms/d/e/1FAIpQLSdPqMb2Um8Mr2qnNvPODyqnKJH6kD90T0_T0PN0Yl3vCRB8bw/viewform',
@@ -212,16 +212,16 @@ const Home = () => {
           </button>
         </div>
 
-        <ul className="list-[square] mx-30">
+        <ul className="list-[square] mx-6 sm:mx-12 md:mx-30">
           {/* Alt Pro Eats */}
-          <li className="text-xl">
+          <li className="text-base sm:text-lg md:text-xl">
             {' '}
             🍽️<span className="font-bold text-sky"> Alt-Pro Eats:</span> The
             Nutritional Benefits of Alternative Proteins
-            <ul className="list-[circle] mx-20 my-3">
+            <ul className="list-[circle] ml-5 mr-2 md:mx-20 my-3">
               <li>
                 <span className="font-bold">Things Planned:</span>{' '}
-                <ul className="ml-15 list-disc">
+                <ul className="ml-5 md:ml-15 list-disc">
                   <li>
                     🍽️ Tasting: sample a variety of plant-based meat and dairy
                     alternatives
@@ -251,7 +251,7 @@ const Home = () => {
           </li>
 
           {/* CAPS */}
-          <li className="text-xl">
+          <li className="text-base sm:text-lg md:text-xl">
             🍽️
             <span className="font-bold text-sky">
               {' '}
@@ -264,7 +264,7 @@ const Home = () => {
           href="https://docs.google.com/forms/d/e/1FAIpQLSd7U415Zw5wR16CSaBR_Rx8ZWw4UW2319GGrbU2JiRoIO1IxA/viewform"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex justify-center text-xl font-bold pt-5"
+          className="flex justify-center text-center px-4 text-lg md:text-xl font-bold pt-5"
         >
           [Join our newsletter to get updates every month →]
         </a>
@@ -272,20 +272,20 @@ const Home = () => {
 
       {/* Section about UofT */}
       <div>
-        <h3 className="font-bold pl-3 text-3xl py-5">
+        <h3 className="font-bold px-3 text-2xl md:text-3xl py-5">
           What makes the University of Toronto a hub?
         </h3>
-        <div className='flex flex-row justify-evenly gap-10 px-10 py-10'>
+        <div className='flex flex-col md:flex-row justify-evenly gap-10 px-4 md:px-10 py-10'>
           {highlights.map((item) => (
-            <div key={item.title} className='flex flex-col flex-1 items-center'>
-              <h3 className='font-bold text-2xl pb-4'>
+            <div key={item.title} className='flex flex-col flex-1 items-center text-center md:text-left'>
+              <h3 className='font-bold text-xl md:text-2xl pb-4'>
                 {item.title}
               </h3>
-              <p className='text-xl pb-6'>
+              <p className='text-lg md:text-xl pb-6'>
                 {item.text}
               </p>
-              <img src={item.image} alt={item.alt} className='h-48 mt-auto'/>
-              
+              <img src={item.image} alt={item.alt} className='h-40 md:h-48 mt-auto'/>
+
             </div>
           ))}
         </div>
