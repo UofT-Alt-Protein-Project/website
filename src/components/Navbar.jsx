@@ -8,6 +8,7 @@ const pages = [
   { name: 'Who Are We?', path: '/WhoAreWe' },
   { name: 'The Team', path: '/TheTeam' },
   { name: 'Join Us', path: '/JoinUs' },
+  { name: 'Newsletter', path: '/newsletter' },
 ]
 
 const linkClass = ({ isActive }) =>
