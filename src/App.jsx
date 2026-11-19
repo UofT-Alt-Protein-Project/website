@@ -7,7 +7,10 @@ import CAPS from './pages/CAPS'
 import JoinUs from './pages/JoinUs'
 import TheTeam from './pages/TheTeam'
 import WhoAreWe from './pages/WhoAreWe'
+import Newsletter from './pages/Newsletter'
+import NewsletterThanks from './pages/NewsletterThanks'
 import { Analytics } from '@vercel/analytics/react'
+
 
 export default function App(){
   return (
@@ -21,6 +24,8 @@ export default function App(){
           <Route path="/JoinUs" element={<JoinUs />} />
           <Route path="/TheTeam" element={<TheTeam />} />
           <Route path="/WhoAreWe" element={<WhoAreWe />} />
+          <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/newsletter/thanks" element={<NewsletterThanks />} />
         </Routes>
       </main>
       <Footer />
