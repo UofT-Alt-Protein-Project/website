@@ -77,14 +77,12 @@ const Footer = () => {
 
         <p className="text-[22px] my-5">Sign-Up for our monthly newsletter!</p>
 
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSd7U415Zw5wR16CSaBR_Rx8ZWw4UW2319GGrbU2JiRoIO1IxA/viewform"
-          target="_blank"
-          rel="noreferrer"
+        <NavLink
+          to="/Newsletter"
           className="inline-block bg-[#265563] hover:bg-[#1c424d] text-white text-[22px] font-bold rounded-full px-12 py-4 transition"
         >
           Sign-Up
-        </a>
+        </NavLink>
       </div>
     </footer>
   )

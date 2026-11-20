@@ -24,8 +24,8 @@ export default function App(){
           <Route path="/JoinUs" element={<JoinUs />} />
           <Route path="/TheTeam" element={<TheTeam />} />
           <Route path="/WhoAreWe" element={<WhoAreWe />} />
-          <Route path="/newsletter" element={<Newsletter />} />
-          <Route path="/newsletter/thanks" element={<NewsletterThanks />} />
+          <Route path="/Newsletter" element={<Newsletter />} />
+          <Route path="/Newsletter/Thanks" element={<NewsletterThanks />} />
         </Routes>
       </main>
       <Footer />
