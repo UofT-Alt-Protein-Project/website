@@ -51,12 +51,24 @@ const Home = () => {
         </div>
         {/* this is for the buttons */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-20 md:gap-65">
-          <button className="bg-ocean cursor-pointer px-12 md:px-17 py-3 border border-night rounded-4xl font-extrabold text-white">
+          <button
+            onClick={() =>
+              window.open(
+                'https://docs.google.com/forms/d/e/1FAIpQLScmUs64lxweuBQr0vbIhbS_TbOIiUlAon34mKsIGBM9w4rbLg/viewform',
+                '_blank',
+                'noopener,noreferrer',
+              )
+            }
+            className="bg-ocean cursor-pointer px-12 md:px-17 py-3 border border-night rounded-4xl font-extrabold text-white"
+          >
             Join Us
           </button>
-          <button className="bg-ocean cursor-pointer px-12 md:px-17 py-3 border border-night rounded-4xl font-extrabold text-white">
+          <NavLink
+            to={'/Events'}
+            className="bg-ocean cursor-pointer px-12 md:px-17 py-3 border border-night rounded-4xl font-extrabold text-white"
+          >
             Events
-          </button>
+          </NavLink>
         </div>
       </div>
       {/* this is for the introduction */}
@@ -90,7 +102,9 @@ const Home = () => {
 
           {/* short intro paragraph to plant based meat + heading*/}
           <div className="flex-1 w-full px-2 sm:px-6 lg:px-10 flex flex-col justify-center">
-            <h3 className="font-bold text-2xl md:text-3xl pb-4">🌱 Plant-based</h3>
+            <h3 className="font-bold text-2xl md:text-3xl pb-4">
+              🌱 Plant-based
+            </h3>
             <ul className="list-disc">
               <li className="pl-2 ml-6 lg:ml-11 text-lg md:text-xl lg:text-[26px] leading-relaxed lg:mr-16">
                 Proteins from peas, soy, wheat, and more, transformed into
@@ -105,7 +119,9 @@ const Home = () => {
         <div className="py-10 flex flex-col-reverse lg:flex-row items-center lg:items-stretch gap-6 px-4 lg:px-0">
           {/* paragraph + hedaer on fermented meat */}
           <div className="flex-1 w-full px-2 sm:px-6 lg:px-10 xl:px-45 flex flex-col justify-center">
-            <h3 className="font-bold text-2xl md:text-3xl pb-4">🧫 Fermentation</h3>
+            <h3 className="font-bold text-2xl md:text-3xl pb-4">
+              🧫 Fermentation
+            </h3>
             <ul className="list-disc">
               <li className="pl-2 ml-6 lg:ml-11 text-lg md:text-xl lg:text-[26px] leading-relaxed">
                 Microbes like yeast and fungi turned into tiny food factories,
@@ -133,7 +149,9 @@ const Home = () => {
 
           {/* short intro paragraph on cultivated meat + heading*/}
           <div className="flex-1 w-full px-2 sm:px-6 lg:px-10 flex flex-col justify-center">
-            <h3 className="font-bold text-2xl md:text-3xl pb-4">🔬 Cultivated</h3>
+            <h3 className="font-bold text-2xl md:text-3xl pb-4">
+              🔬 Cultivated
+            </h3>
             <ul className="list-disc">
               <li className="pl-2 ml-6 lg:ml-11 text-lg md:text-xl lg:text-[26px] leading-relaxed xl:mr-75">
                 Real meat grown from a small sample of animal cells, from cell
@@ -156,7 +174,9 @@ const Home = () => {
 
       {/* Events sections */}
       <div>
-        <h3 className="font-bold px-3 text-2xl md:text-3xl pb-5">Upcoming Events</h3>
+        <h3 className="font-bold px-3 text-2xl md:text-3xl pb-5">
+          Upcoming Events
+        </h3>
         <ul className="list-[square] mx-6 sm:mx-12 md:mx-30">
           {/* Lecture Secires */}
           <li className="text-base sm:text-lg md:text-xl">
@@ -275,22 +295,25 @@ const Home = () => {
         <h3 className="font-bold px-3 text-2xl md:text-3xl py-5">
           What makes the University of Toronto a hub?
         </h3>
-        <div className='flex flex-col md:flex-row justify-evenly gap-10 px-4 md:px-10 py-10'>
+        <div className="flex flex-col md:flex-row justify-evenly gap-10 px-4 md:px-10 py-10">
           {highlights.map((item) => (
-            <div key={item.title} className='flex flex-col flex-1 items-center text-center md:text-left'>
-              <h3 className='font-bold text-xl md:text-2xl pb-4'>
+            <div
+              key={item.title}
+              className="flex flex-col flex-1 items-center text-center md:text-left"
+            >
+              <h3 className="font-bold text-xl md:text-2xl pb-4">
                 {item.title}
               </h3>
-              <p className='text-lg md:text-xl pb-6'>
-                {item.text}
-              </p>
-              <img src={item.image} alt={item.alt} className='h-40 md:h-48 mt-auto'/>
-
+              <p className="text-lg md:text-xl pb-6">{item.text}</p>
+              <img
+                src={item.image}
+                alt={item.alt}
+                className="h-40 md:h-48 mt-auto"
+              />
             </div>
           ))}
         </div>
       </div>
-
     </div>
   )
 }
