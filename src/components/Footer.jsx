@@ -23,8 +23,8 @@ const middleMenu = [
     name: 'Events',
     path: '/Events',
     children: [
-      { name: '2026-2027 Event', path: '/Events/2026-2027' },
-      { name: 'Past events (2024-2025, 2025-2026)', path: '/Events/Past' },
+      { name: '2026-2027 Event', path: '/Events#2026-2027' },
+      { name: 'Past events (2024-2025, 2025-2026)', path: '/Events#past' },
     ],
   },
   { name: 'The Team', path: '/TheTeam' },
