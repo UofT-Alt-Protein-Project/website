@@ -29,7 +29,6 @@ const highlights = [
   },
 ]
 
-
 const Home = () => {
   return (
     <div>
@@ -180,31 +179,39 @@ const Home = () => {
         <ul className="list-[square] mx-6 sm:mx-12 md:mx-30">
           {/* Lecture Secires */}
           <li className="text-base sm:text-lg md:text-xl">
-            🔬 <span className="font-bold text-sky">Lecture Series:</span> The
-            Science of Cultivated Meat
+            🌱 <span className="font-bold text-sky">Lecture Series:</span>{' '}
+            Engineering Plant Proteins & Peptides For Type 2 Diabetes Management
             <ul className="list-[circle] ml-5 mr-2 md:mx-20 my-3">
               <li>
                 <span className="font-bold">Things Planned:</span>{' '}
                 <ul className="ml-5 md:ml-15 list-disc">
                   <li>
-                    🎤 Expert talk: Danielle Serra, PhD Candidate in Biomedical
-                    Engineering at the University of Toronto, on how synthetic
-                    biology and stem cell engineering can make cultivated meat
-                    more efficient and affordable
+                    🎤 <span className="font-semibold">Expert talk:</span> Dr.
+                    Sonu Sharma, NSERC-CIHR Postdoctoral Fellow in the Diosady
+                    Group at the University of Toronto, on how food engineering
+                    and circular bioeconomies can turn Canadian crops into
+                    functional proteins for pet and human health
                   </li>
                   <li>
-                    💬 Open Q&A: ask your questions directly and learn how to
-                    get involved in alt protein research
+                    🍩 <span className="font-semibold">Free Food:</span> come
+                    for a quick snack/meal and refreshments!
                   </li>
                   <li>
-                    🤝 Networking: meet students interested in food, health, and
-                    sustainability
+                    💬 <span className="font-semibold">Q&A and Discussions:</span> ask your
+                    questions directly and hear from an industry-experienced
+                    researcher
+                  </li>
+                  <li>
+                    🤝 <span className="font-semibold">Networking:</span>{' '}
+                    connect with the U of T alt-protein community, whether
+                    you're into chemical/food engineering, sustainability,
+                    nutrition, or just curious about the future of food
                   </li>
                 </ul>
               </li>
               <li>
-                <span className="font-bold">Location:</span> University of
-                Toronto (St. George campus) Medical Sciences Building (Room TBD)
+                <span className="font-bold">Location:</span> Bahen Centre for
+                Information Technology (BA 2185)
               </li>
               <li>
                 <span className="font-bold">Date:</span> Friday, November 27,
@@ -243,18 +250,22 @@ const Home = () => {
                 <span className="font-bold">Things Planned:</span>{' '}
                 <ul className="ml-5 md:ml-15 list-disc">
                   <li>
-                    🍽️ Tasting: sample a variety of plant-based meat and dairy
-                    alternatives
+                    🍽️ <span className="font-semibold">Tasting:</span> sample a
+                    variety of plant-based meat and dairy alternatives
                   </li>
                   <li>
-                    🎤 Expert talk: Dr. Laura Chiavaroli, Assistant Professor of
-                    Nutritional Sciences at the University of Toronto, on how
-                    these products compare nutritionally to the originals
+                    🎤 <span className="font-semibold">Expert talk:</span> Dr.
+                    Laura Chiavaroli, Assistant Professor of Nutritional
+                    Sciences at the University of Toronto, on how these products
+                    compare nutritionally to the originals
                   </li>
-                  <li>💬 Q&A: ask your questions directly to the speaker!</li>
                   <li>
-                    🤝 Networking: meet students interested in food, health, and
-                    sustainability
+                    💬 <span className="font-semibold">Q&A:</span> ask your
+                    questions directly to the speaker!
+                  </li>
+                  <li>
+                    🤝 <span className="font-semibold">Networking:</span> meet
+                    students interested in food, health, and sustainability
                   </li>
                 </ul>
               </li>
@@ -272,7 +283,7 @@ const Home = () => {
 
           {/* CAPS */}
           <li className="text-base sm:text-lg md:text-xl">
-            🍽️
+            🏢
             <span className="font-bold text-sky">
               {' '}
               Canadian Alternative Protein Symposium (CAPS):
