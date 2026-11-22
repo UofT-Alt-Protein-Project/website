@@ -11,26 +11,25 @@ const Events = () => {
   const { hash } = useLocation()
 
   useEffect(() => {
-    if (hash) {
-      document
-        .getElementById(hash.slice(1))
-        ?.scrollIntoView({ behavior: 'smooth' })
-    } else {
-      window.scrollTo(0, 0)
-    }
-  }, [hash])
+    if (!location.hash) return
+    const el = document.getElementById(location.hash.slice(1))
+    el?.scrollIntoView({ behavior: 'smooth' })
+  }, [location.hash, location.key])
 
   return (
     <div>
-      <section className="scroll-mt-24 px-6 pt-12 pb-16 md:px-36 md:pt-20">
+      <section>
         {/*2026-2027 Events*/}
-        <section id="2026-2027" className="mb-20">
+        <section
+          id="2026-2027"
+          className="scroll-mt-24 px-6 pt-12 pb-16 md:px-36 md:pt-20"
+        >
           <h3 className="font-bold pl-3 text-3xl mb-8">2026-2027 Events </h3>
           <div className="max-w-6xl md:pl-12">
             <h5 className="font-bold text-2xl mb-4">
               Fall Lecture Series: Engineering Plant Proteins & Peptides
             </h5>
-            <div className="space-y-6 text-lg leading-relaxed max-w-6xl md:pl-12">
+            <div className="space-y-6 text-lg leading-relaxed max-w-6xl">
               <p>
                 Please join Dr. Sonu Sharma, an NSERC-CIHR Postdoctoral Fellow
                 at the University of Toronto, specializing in food engineering,
@@ -41,7 +40,7 @@ const Events = () => {
                 proteins and bioactive peptides for type 2 diabetes management.
               </p>
               <p>
-                <span aria-hidden="true">📅</span> Date: November 27th, Friday
+                <span aria-hidden="true">📅</span> Date: Friday, November 27th
                 2026
                 <br />
                 <span aria-hidden="true">🕤</span> Time: 6:00 PM - 7:00 PM
@@ -71,7 +70,10 @@ const Events = () => {
         </section>
 
         {/*Past events (2024-2025, 2025-2026)*/}
-        <section id="past" className="mb-20">
+        <section
+          id="past"
+          className="scroll-mt-24 px-6 pt-12 pb-16 md:px-36 md:pt-20"
+        >
           <h3 className="font-bold pl-3 text-3xl mb-8">
             Past events (2024-2025, 2025-2026){' '}
           </h3>
@@ -82,7 +84,7 @@ const Events = () => {
                 The Cultivated B develops bioreactors for the scalable
                 production of alternative proteins. We partnered with McMaster
                 and Waterloo to offer a presentation and tour of their
-                Burlington facility on September 26th from 9:30am-12pm.
+                Burlington facility on September 26th from 9:30am-12pm in 2025.
               </p>
 
               <img
