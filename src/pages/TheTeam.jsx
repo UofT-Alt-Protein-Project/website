@@ -8,13 +8,13 @@ import avinPic from '../assets/TeamMember26-27/Avin.jpg'
 import keshavPic from '../assets/TeamMember26-27/Keshav.jpeg'
 import marcusPic from '../assets/TeamMember26-27/Marcus.jpg'
 import reenaPic from '../assets/TeamMember26-27/Reena.JPG'
-import mellisaPic from '../assets/TeamMember26-27/Mellisa.png'
+import mellisaPic from '../assets/TeamMember26-27/Mellisa.jpg'
 import gracePic from '../assets/TeamMember26-27/Grace.jpg'
 import bettinaPic from '../assets/TeamMember26-27/Bettina.jpg'
 import mohammadPic from '../assets/TeamMember26-27/Mohammad.jpg'
 import carinaPic from '../assets/TeamMember26-27/Carina.JPG'
-import daniellePic from '../assets/TeamMember26-27/Danielle.png'
-import gabrielaPic from '../assets/TeamMember26-27/Gabriela.png'
+import daniellePic from '../assets/TeamMember26-27/Danielle.jpg'
+import gabrielaPic from '../assets/TeamMember26-27/Gabriela.jpg'
 
 const categoryColors = {
   president: 'bg-[#3E7F86]',
@@ -141,7 +141,7 @@ const TheTeam = () => {
           {members.map((m) => (
             <div
               key={m.name}
-              className={`flex items-start gap-10 px-14 py-8 border border-gray-600 rounded ${categoryColors[m.category]}`}
+              className={`flex flex-col md:flex-row items-start gap-6 md:gap-10 px-6 md:px-14 py-8 border border-gray-600 rounded ${categoryColors[m.category]}`}
             >
               <img
                 src={m.photo}
@@ -158,9 +158,9 @@ const TheTeam = () => {
           ))}
           {/* Advisors */}
           <div
-            className={`flex flex-col gap-8 md:flex-row md:justify-between px-14 py-8 border border-gray-600 rounded ${categoryColors.advisor}`}
+            className={`flex flex-col gap-8 md:flex-row md:justify-between px-6 md:px-14 py-8 border border-gray-600 rounded ${categoryColors.advisor}`}
           >
-            <div className="flex items-start gap-8">
+            <div className="flex flex-col md:flex-row items-start gap-4 md:gap-8">
               <img
                 src={advisors[0].photo}
                 alt={advisors[0].name}
@@ -173,7 +173,7 @@ const TheTeam = () => {
                 <p className="text-2xl font-bold">{advisors[0].name}</p>
               </div>
             </div>
-            <div className="flex items-end gap-4">
+            <div className="flex flex-col-reverse md:flex-row items-start md:items-end gap-4">
               <div className="pb-1 leading-snug">
                 <p className="text-xl font-semibold text-black/40">
                   {advisors[1].role}
