@@ -91,11 +91,11 @@ const WhoAreWe = () => {
         </section>
 
         {/* images */}
-        <div className="flex flex-row justify-evenly py-6">
+        <div className="flex flex-row justify-evenly px-6 py-6">
           <img
             src={map}
             alt="map of APP groups around the world"
-            className="w-160 h-auto rounded-2xl"
+            className="w-full max-w-160 h-auto rounded-2xl"
           />
         </div>
 
