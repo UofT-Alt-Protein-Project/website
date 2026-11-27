@@ -181,6 +181,16 @@ const Home = () => {
           <li className="text-base sm:text-lg md:text-xl">
             🌱 <span className="font-bold text-sky">Lecture Series:</span>{' '}
             Engineering Plant Proteins & Peptides For Type 2 Diabetes Management
+            {/* TEMPORARY NOTICE */}
+            <h3 className="py-5">
+              <span className="font-bold text-red-600 underline">UPDATE:</span>{' '}
+              This event has been postponed to the winter semester. To
+              accommodate demands, we will be making this event{' '}
+              <span className="underline">online</span> at a future date so
+              other students and communities from the industry/public can join
+              us for his lecture. If you have signed up, you will be notified
+              about the new date. Thank you for understanding.
+            </h3>
             <ul className="list-[circle] ml-5 mr-2 md:mx-20 my-3">
               <li>
                 <span className="font-bold">Things Planned:</span>{' '}
@@ -197,9 +207,10 @@ const Home = () => {
                     for a quick snack/meal and refreshments!
                   </li>
                   <li>
-                    💬 <span className="font-semibold">Q&A and Discussions:</span> ask your
-                    questions directly and hear from an industry-experienced
-                    researcher
+                    💬{' '}
+                    <span className="font-semibold">Q&A and Discussions:</span>{' '}
+                    ask your questions directly and hear from an
+                    industry-experienced researcher
                   </li>
                   <li>
                     🤝 <span className="font-semibold">Networking:</span>{' '}
@@ -210,15 +221,16 @@ const Home = () => {
                 </ul>
               </li>
               <li>
-                <span className="font-bold">Location:</span> Bahen Centre for
-                Information Technology (BA 2185)
+                <span className="font-bold">Location:</span> POSTPONED (Please
+                see message above)
               </li>
               <li>
-                <span className="font-bold">Date:</span> Friday, November 27,
-                2026
+                <span className="font-bold">Date:</span> POSTPONED (Please see
+                message above)
               </li>
               <li>
-                <span className="font-bold">Time:</span> 6:00 PM - 7:00 PM
+                <span className="font-bold">Time:</span> POSTPONED (Please see
+                message above)
               </li>
             </ul>
           </li>

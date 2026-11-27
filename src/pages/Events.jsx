@@ -30,6 +30,18 @@ const Events = () => {
               Fall Lecture Series: Engineering Plant Proteins & Peptides
             </h5>
             <div className="space-y-6 text-lg leading-relaxed max-w-6xl">
+              {/* TEMPORARY NOTICE */}
+              <h3 className="py-5">
+                <span className="font-bold text-red-600 underline">
+                  UPDATE:
+                </span>{' '}
+                This event has been postponed to the winter semester. To
+                accommodate demands, we will be making this event{' '}
+                <span className="underline">online</span> at a future date so
+                other students and communities from the industry/public can join
+                us for his lecture. If you have signed up, you will be notified
+                about the new date. Thank you for understanding.
+              </h3>
               <p>
                 Please join Dr. Sonu Sharma, an NSERC-CIHR Postdoctoral Fellow
                 at the University of Toronto, specializing in food engineering,
@@ -40,13 +52,14 @@ const Events = () => {
                 proteins and bioactive peptides for type 2 diabetes management.
               </p>
               <p>
-                <span aria-hidden="true">📅</span> Date: Friday, November 27th
-                2026
+                <span aria-hidden="true">📅</span> POSTPONED (Please see message
+                above)
                 <br />
-                <span aria-hidden="true">🕤</span> Time: 6:00 PM - 7:00 PM
+                <span aria-hidden="true">🕤</span> POSTPONED (Please see message
+                above)
                 <br />
-                <span aria-hidden="true">📌</span> Location: Bahen Centre for
-                Information Technology (BA 2185)
+                <span aria-hidden="true">📌</span> POSTPONED (Please see message
+                above)
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
